@@ -1,0 +1,150 @@
+/* reset do Css*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-image: url(http://all4desktop.com/data_images/original/4249320-library.jpg);
+    background-size: auto 100vh;
+    font-family: Courier New;
+    font-size: 18px;
+    height: 119vh;
+    color: whitesmoke;
+  }
+
+ /* se a tela tiver no mínimo 360px vai carregar esse estilo*/
+  
+  @media (min-width: 360px) {
+    body {
+  font-size: 22px;
+    }
+  }
+
+  @media (min-width: 600px) {
+    body {
+      font-size: 26px;
+    }
+}
+
+    @media (min-width: 800px) {
+      body {
+        font-size: 30px;
+      }
+}
+
+  header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu {
+    background-color: whitesmoke;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu li {
+    list-style: none;
+  }
+
+.menu a {
+  display: block;
+  padding: 2vh;
+  font-size: 1.5em;
+}
+  
+  a {
+    text-decoration: none;
+    color: black;
+}
+  
+  a:hover {
+    text-decoration: none;
+    box-shadow: 0px 0px 5px black; 
+  }
+  
+  .site-title {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 3em;
+    padding: 2vw;
+  }
+  
+  .site-subtitle {
+    text-align: center;
+    font-style: italic;
+    font-size: 2em;
+  }
+
+.contato,
+.portfolio {
+  padding: 2em;
+  min-height: 100vh;
+  text-align: center;
+}
+
+@media (min-width: 686px) {
+.grid {
+  grid-template-columns: 270px 270px;
+}  
+}
+
+@media (min-width: 1029px) {
+.grid {
+  grid-template-columns: 270px 270px 270px;
+}  
+}
+
+@media (min-width: 1372px) {
+.grid {
+  grid-template-columns: 270px 270px 270px 270px;
+}  
+}
+
+@media (min-width: 1500px) {
+.grid {
+  grid-template-columns: 270px 270px 270px 270px 270px;
+  justify-content: center;
+}  
+}
+
+.portfolio figure {
+  text-align: center;
+}
+
+.contato h2,
+.portfolio h2 {
+  margin-bottom: 1em;
+  font-size: 3em;
+}
+
+.img-portfolio {
+    height: 200px;
+    width: 270px;
+  }
+
+.grid {
+  display: grid;
+  gap: 3.65em;
+}
+
+.contato a {
+  color: whitesmoke;
+  font-size: 1.5em;
+  padding: 1em;
+}
+
+.contato a:hover {
+  text-decoration: none;
+  text-shadow: 0px 0px 10px whitesmoke;
+}
